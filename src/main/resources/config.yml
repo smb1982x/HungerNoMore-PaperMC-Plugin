@@ -1,0 +1,16 @@
+# HungerNoMore Configuration
+hunger:
+  keep-full: true
+  disable-natural-regen: true
+
+health:
+  hungerhealValue: 4.0
+  damageValue: 2.0
+  customPercent: 1.0
+
+messages:
+  prefix: "&7[&6HungerNoMore&7]&r "
+  heal: "&aYou gained &2{amount}&a health from &2{item}&a!"
+  damage: "&cYou lost &4{amount}&c health from &4{item}&c!"
+  reload: "&aConfiguration reloaded"
+  no-permission: "&cNo permission"
