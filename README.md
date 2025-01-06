@@ -26,14 +26,14 @@ HungerNoMore is a lightweight plugin for PaperMC servers that removes Minecraft'
 Once the server starts, a default config file (`config.yml`) is generated in the plugin’s folder.  
 Open `config.yml` to modify:
 
-| Setting                 | Default | Description                                                                                          |
-|-------------------------|---------|------------------------------------------------------------------------------------------------------|
-| `keep-full`             | true    | If enabled, players’ hunger bars are always full (no depletion).                                     |
-| `disable-natural-regen` | false   | If enabled, players will not naturally regenerate health from having a full hunger bar.              |
-| `hungerhealValue`       | 4.0     | Base amount of health restored upon eating foods in the “healing” category.                          |
-| `damageValue`           | 2.0     | Base amount of damage applied upon consuming harmful foods.                                          |
-| `customPercent`         | 1.0     | Multiplier for both damage and healing calculations.                                                 |
-| `messages`              | Various | Customize the messages sent to players when they heal or take damage from certain foods.             |
+| Setting                 | Default | Description                                                                                                       |
+|-------------------------|---------|-------------------------------------------------------------------------------------------------------------------|
+| `keep-full`             | true    | If true, players’ hunger bars are always frozen at 95%.                                                           |
+| `disable-natural-regen` | true    | If true, players will not naturally regenerate health from hunger bar.                                            |
+| `hungerhealValue`       | 4.0     | Base amount of health restored upon eating foods in the “healing” category. (4.0 = Cooked Beef restores 2 Hearts) |
+| `damageValue`           | 2.0     | Base amount of damage applied upon consuming harmful foods.                                                       |
+| `customPercent`         | 1.0     | Multiplier for both damage and healing calculations.                                                              |
+| `messages`              | Various | Customize the messages sent to players when they heal or take damage from certain foods.                          |
  
 ## Usage
 1. **Join the server** and observe that your hunger bar is full at all times (if `keepHungerFull` is true).
